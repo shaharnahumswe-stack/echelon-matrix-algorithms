@@ -5,21 +5,42 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "echelon-matrix"
 version = "1.0.0"
-description = "Educational Gaussian-elimination algorithms for REF, rank, determinant, and inverse"
+description = "Gaussian and Gauss-Jordan elimination algorithms for matrix rank, determinant, inverse, and row echelon form"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {file = "LICENSE"}
 dependencies = ["numpy>=1.26"]
 authors = [
   {name = "Shahar Nahum"},
   {name = "Arad Harush"}
 ]
+keywords = [
+  "linear-algebra",
+  "gaussian-elimination",
+  "gauss-jordan",
+  "scientific-computing",
+  "numerical-methods"
+]
 classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering :: Mathematics"
 ]
 
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
 [project.scripts]
 echelon-matrix = "echelon_matrix.cli:main"
+
+[project.urls]
+Repository = "https://github.com/shaharnahumswe-stack/echelon-matrix-algorithms"
+Issues = "https://github.com/shaharnahumswe-stack/echelon-matrix-algorithms/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

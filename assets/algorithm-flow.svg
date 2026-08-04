@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260">
+  <defs>
+    <style>
+      .box { fill: #f6f8fa; stroke: #57606a; stroke-width: 2; rx: 14; }
+      .title { font: 700 22px Arial, sans-serif; fill: #24292f; }
+      .text { font: 16px Arial, sans-serif; fill: #57606a; }
+      .arrow { stroke: #0969da; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0969da"/>
+    </marker>
+  </defs>
+
+  <rect x="40" y="70" width="210" height="120" class="box"/>
+  <text x="145" y="112" text-anchor="middle" class="title">Input Matrix</text>
+  <text x="145" y="145" text-anchor="middle" class="text">CSV, list, or NumPy array</text>
+
+  <path d="M250 130 L330 130" class="arrow"/>
+
+  <rect x="330" y="45" width="260" height="170" class="box"/>
+  <text x="460" y="88" text-anchor="middle" class="title">Elimination Engine</text>
+  <text x="460" y="122" text-anchor="middle" class="text">Partial pivot selection</text>
+  <text x="460" y="150" text-anchor="middle" class="text">Row swaps and elimination</text>
+  <text x="460" y="178" text-anchor="middle" class="text">Floating-point tolerance</text>
+
+  <path d="M590 130 L670 130" class="arrow"/>
+
+  <rect x="670" y="30" width="390" height="200" class="box"/>
+  <text x="865" y="72" text-anchor="middle" class="title">Computed Results</text>
+  <text x="865" y="108" text-anchor="middle" class="text">Row Echelon Form</text>
+  <text x="865" y="138" text-anchor="middle" class="text">Rank and determinant</text>
+  <text x="865" y="168" text-anchor="middle" class="text">Matrix inverse</text>
+  <text x="865" y="198" text-anchor="middle" class="text">CLI output and tests</text>
+</svg>
